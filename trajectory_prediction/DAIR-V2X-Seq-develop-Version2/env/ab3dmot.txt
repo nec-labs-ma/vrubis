@@ -1,0 +1,10 @@
+# https://github.com/AIR-THU/DAIR-V2X/issues/82
+scikit-learn==1.0.2
+filterpy==1.4.5
+numba==0.48.0
+matplotlib==3.5.2
+pillow==9.4.0
+opencv-python==4.7.0.72
+pyyaml==6.0
+llvmlite==0.31.0
+wheel==0.38.4

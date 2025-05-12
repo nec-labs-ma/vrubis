@@ -1,0 +1,17 @@
+open3d
+wheel
+munkres
+easydict
+cython==0.29.36
+
+# SimpleTrack
+filterpy
+shapley
+numba
+pyquaternion
+nuscenes-devkit
+
+# path prediction
+tqdm
+pandas
+matplotlib
