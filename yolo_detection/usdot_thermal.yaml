@@ -1,0 +1,16 @@
+path: /net/acadia15a/data/datasets/usdotisc/yolo_format/thermal
+train: images/train
+val: images/val
+
+# Classes
+names:
+  0: other vehicle
+  1: person with bicycle
+  2: SUV
+  3: other objects
+  4: person
+  5: person using scooter or skateboard
+  6: person using props
+  7: person in wheelchair
+  8: child
+
