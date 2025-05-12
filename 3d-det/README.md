@@ -242,3 +242,10 @@ You can monitor training progress using TensorBoard:
 ```
 tensorboard --logdir=tensorboard_logs/vrubis --bind_all
 ```
+
+## References
+* [PointPillars: Fast Encoders for Object Detection from Point Clouds](https://arxiv.org/abs/1812.05784)
+
+* [SECOND: Sparsely Embedded Convolutional Detection](https://www.mdpi.com/1424-8220/18/10/3337)
+
+* [From Points to Parts: 3D Object Detection from Point Cloud with Part-aware and Part-aggregation Network](https://arxiv.org/abs/1907.03670)
