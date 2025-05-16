@@ -100,7 +100,7 @@ https://udsot-data.s3.us-west-2.amazonaws.com/annotations/val_thermal_camera.jso
 
 #### 📥 Visual Validation Data
 ```
-https://udsot-data.s3.us-west-2.amazonaws.com/annotations/train_visual_camera.json
+https://udsot-data.s3.us-west-2.amazonaws.com/annotations/val_visual_camera.json
 -> Save as: annotations/val_visual_camera.json
 ```
 
