@@ -182,7 +182,7 @@ Activate your environment and run training using SLURM:
 ```
 conda activate openmmlab
 cd mmdetection3d/
-bash tools/slurm_train.sh gpu vrubis_train ~/VRUBIS/config/pointpillars_vrubis.py /net/acadia15a/data/yajmera/experiments/0001
+bash tools/slurm_train.sh gpu vrubis_train ~/VRUBIS/config/pointpillars_vrubis.py experiments/0001
 ```
 Results:
 ```
@@ -218,7 +218,7 @@ Activate your environment and run training using SLURM:
 ```
 conda activate openmmlab
 cd mmdetection3d/
-bash tools/slurm_train.sh gpu vrubis_ft_pointpillars ~/VRUBIS/config/pointpillars_vrubis_ft_kitti.py /net/acadia15a/data/yajmera/experiments/0002
+bash tools/slurm_train.sh gpu vrubis_ft_pointpillars ~/VRUBIS/config/pointpillars_vrubis_ft_kitti.py /net/experiments/0002
 ```
 Results: 
 ```
