@@ -42,11 +42,11 @@ vrubis
 ### 3. Generate Training Metadata
 MMdetection3d expects two files: `vrubis_infos_train.pkl` and `vrubis_infos_val.pkl` for training and inference. 
 ```
-srun -u --pty --mem-per-cpu=64GB --partition cpu --time=10-0 python create_data.py
+srun -u --pty --mem-per-cpu=64GB --partition cpu --time=10-0 python create_filter_data.py
 ```
 To generate a smaller sample subset (8k train / 2k val), use:
 ```
-srun -u --pty --mem-per-cpu=64GB --partition cpu --time=10-0 python create_data.py --sample
+srun -u --pty --mem-per-cpu=64GB --partition cpu --time=10-0 python create_filter_data.py --sample
 ```
 After completion, your structure will look like:
 ```

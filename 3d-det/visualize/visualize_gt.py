@@ -5,7 +5,7 @@ import json
 from tqdm import tqdm
 import cv2
 
-lanelet2_map = cv2.cvtColor(cv2.imread('/home/ma/yajmera/VRUBIS/metadata/map.png'), cv2.COLOR_BGR2GRAY)
+lanelet2_map = cv2.cvtColor(cv2.imread('VRUBIS/metadata/map.png'), cv2.COLOR_BGR2GRAY)
 lanelet2_map = ((lanelet2_map!=255).astype(np.float32)*255).astype(np.uint8)
 pixelsize, metricsize = lanelet2_map.shape[0], 200
 lanelet2_map = cv2.dilate(lanelet2_map, np.ones((int(1.0/metricsize*pixelsize),int(1.0/metricsize*pixelsize)),np.uint8), iterations=1)     
@@ -73,9 +73,9 @@ def save_images(run, annotations_path, concat_lidar_path, output_path):
 
 
 def main():    
-    base_path = "/net/acadia15a/data/datasets/usdotisc/training_annotations"
+    base_path = "vrubis/training_annotations"
     run = "Run_1"
-    lidar_path = "/net/acadia15a/data/datasets/usdotisc/annotation_frames"
+    lidar_path = "vrubis/annotation_frames"
     output_path = f"./tmp/{run}/"
 
     print(f'Running {run}...')

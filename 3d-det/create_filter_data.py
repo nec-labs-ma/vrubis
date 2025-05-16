@@ -6,7 +6,7 @@ from tqdm import tqdm
 from utils import Visualizer2D, BBox
 import cv2
 
-DATASET_DIR = "/net/acadia15a/data/datasets/usdotisc/vrubis"
+DATASET_DIR = "vrubis"
 info_prefix="vrubis"
 
 points_dir = osp.join(DATASET_DIR, 'points') 
@@ -20,7 +20,7 @@ class_map = {
     'Car': 2,  
 }
 
-lanelet2_map = cv2.cvtColor(cv2.imread('/home/ma/yajmera/VRUBIS/metadata/map.png'), cv2.COLOR_BGR2GRAY)
+lanelet2_map = cv2.cvtColor(cv2.imread('VRUBIS/metadata/map.png'), cv2.COLOR_BGR2GRAY)
 lanelet2_map = ((lanelet2_map!=255).astype(np.float32)*255).astype(np.uint8)
 pixelsize, metricsize = lanelet2_map.shape[0], 200
 lanelet2_map = cv2.dilate(lanelet2_map, np.ones((int(1.0/metricsize*pixelsize),int(1.0/metricsize*pixelsize)),np.uint8), iterations=1)     

@@ -5,11 +5,12 @@ from pathlib import Path
 from tqdm import tqdm
 import cv2
 
-LIDAR_DIR = "/net/acadia15a/data/datasets/usdotisc/annotation_frames"
-ANNOTATION_DIR = "/net/acadia15a/data/datasets/usdotisc/training_annotations"
-OUTPUT_DIR = "/net/acadia15a/data/datasets/usdotisc/vrubis"
-TRAIN_SPLIT = "/home/ma/yajmera/VRUBIS/train_runs.txt"
-VAL_SPLIT = "/home/ma/yajmera/VRUBIS/val_runs.txt"
+# Modify these as per your dir locations
+LIDAR_DIR = "vrubis/annotation_frames"
+ANNOTATION_DIR = "vrubis/training_annotations"
+OUTPUT_DIR = "vrubis"
+TRAIN_SPLIT = "VRUBIS/train_runs.txt"
+VAL_SPLIT = "VRUBIS/val_runs.txt"
 
 # Mapping category names to KITTI class names
 CATEGORY_MAPPING = {

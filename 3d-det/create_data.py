@@ -4,7 +4,7 @@ import mmengine
 import numpy as np
 from tqdm import tqdm
 
-DATASET_DIR = "/net/acadia15a/data/datasets/usdotisc/vrubis"
+DATASET_DIR = "vrubis"
 info_prefix="vrubis"
 
 points_dir = osp.join(DATASET_DIR, 'points') 
