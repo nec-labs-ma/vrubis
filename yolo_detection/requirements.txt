@@ -8,3 +8,4 @@ pillow
 tqdm
 scikit-learn
 pycocotools
+awscli==1.25.0
