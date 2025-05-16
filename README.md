@@ -12,11 +12,12 @@ We propose VRUBIS, a Benchmark on Intersection Safety for Vulnerable Road Users 
 
 vrubis/
 │
-├── annotations/                # Contains COCO-style annotation JSON files
+├── annotations/                # Contains COCO-style annotation JSON files and other data which is relevant for the task
 │   ├── train_thermal_camera.json
 │   ├── train_visual_camera.json
 │   ├── val_thermal_camera.json
 │   ├── val_visual_camera.json
+|   └── Runs_*/
 │
 ├── images/                     # Images used for training/validation
 │   └── Runs_*/                 # Images grouped by run, per camera
