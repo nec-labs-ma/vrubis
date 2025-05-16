@@ -15,6 +15,7 @@ def convert_usdot_json_to_yolo(json_path, output_dir, image_subdir='images/train
     categories = {cat['id']: idx for idx, cat in enumerate(data['categories'])}
 
     # Output directories
+    print('output_dir:', output_dir)
     img_out_dir = output_dir / image_subdir
     label_out_dir = output_dir / label_subdir
     os.makedirs(img_out_dir, exist_ok=True)
@@ -65,13 +66,12 @@ def convert_usdot_json_to_yolo(json_path, output_dir, image_subdir='images/train
 
 # Example usage
 annotations = glob('./annotations/*.json')
-os.system('mkdir .yolo_format')
 for anno_files in annotations:
-    if thermal in anno_files:
-        output_dir = Path("./yolo_format/thermal"),
+    if 'thermal' in anno_files:
+        output_dir = Path("./yolo_format/thermal")
     else:
-        output_dir = Path("./yolo_format/visual"),
-    if val in anno_files:
+        output_dir = Path("./yolo_format/visual")
+    if 'val' in anno_files:
         convert_usdot_json_to_yolo(
             json_path=Path(anno_files),
             output_dir=output_dir,

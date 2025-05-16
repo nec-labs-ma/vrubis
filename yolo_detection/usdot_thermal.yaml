@@ -1,4 +1,4 @@
-path: ./yolo_format/thermal
+path: <full_path_to_yolo_detection>/yolo_format/thermal
 train: images/train
 val: images/val
 

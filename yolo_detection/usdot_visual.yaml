@@ -1,4 +1,4 @@
-path: ./yolo_format/visual
+path: <full_path_to_yolo_detection>/yolo_format/visual
 train: images/train
 val: images/val
 
