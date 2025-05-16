@@ -4,6 +4,7 @@ We propose VRUBIS, a Benchmark on Intersection Safety for Vulnerable Road Users 
 - images can be downloaded by running `aws s3 cp s3://udsot-data/images <root>/ --no-sign-request`
 - annotations can be downloaded by running `aws s3 cp s3://udsot-data/images <root>/ --recursive --no-sign-request`
 
+```bash
 ## 📁 Directory Structure
 
 vrubis/
@@ -24,3 +25,5 @@ vrubis/
 │       ├── Runs_002/
 │       │   └── ...
 │       └── ...
+
+```
