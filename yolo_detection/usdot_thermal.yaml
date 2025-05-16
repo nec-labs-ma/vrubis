@@ -1,4 +1,4 @@
-path: /net/acadia15a/data/datasets/usdotisc/yolo_format/thermal
+path: ./yolo_format/thermal
 train: images/train
 val: images/val
 

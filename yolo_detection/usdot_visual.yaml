@@ -1,4 +1,4 @@
-path: /net/acadia15a/data/datasets/usdotisc/yolo_format/visual
+path: ./yolo_format/visual
 train: images/train
 val: images/val
 
