@@ -72,10 +72,13 @@ cd annotations
 
 ### 3. Download COCO Annotations and images from S3
 
-####📥 Images
+#### 📥 Images
+```
 s3://udsot-data/images/
+
 aws s3 cp s3://udsot-data/images udsot_data/ --recursive --no-sign-request
 -> Save as: images/Run_X
+```
 
 #### 📥 Thermal Training Data
 ```
