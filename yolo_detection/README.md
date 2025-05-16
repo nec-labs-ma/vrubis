@@ -126,6 +126,19 @@ This will create a `yolo_format/` folder containing:
 
 ---
 
+## 🔁 Change the yaml files
+
+Open usdot_thermal/visual.yaml and replace the first line:
+```
+train: <full_path_to_yolo_detection>/yolo_format/thermal
+```
+with your actual absolute path, for example:
+```
+train: /net/acadia15a/data/datasets/vrubis/yolo_detection/yolo_format/thermal
+```
+
+
+
 ## 🏋️‍♂️ Training
 
 Train the YOLOv11n model on either camera type using the scripts below:
