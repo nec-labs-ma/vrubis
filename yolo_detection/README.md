@@ -1,27 +1,43 @@
-# 🔍 YOLOv11n Custom Object Detection
+# YOLOv11n Training on Custom Dataset (Thermal and Visual Cameras)
 
-This repository provides a complete pipeline for training and validating YOLOv11n on your custom dataset in YOLO format, converted from COCO-style annotations.
+This guide walks through the steps to prepare, train, and validate the YOLOv11n model on a custom dataset in YOLO format derived from COCO-style annotations.
 
 ---
 
-## 📁 Project Structure
+## 📁 Directory Structure
 
-```
+
+```bash
 yolo_detection/
-├── annotations/                # Contains COCO annotations
+│
+├── annotations/                # Contains COCO-style annotation JSON files
 │   ├── train_thermal_camera.json
 │   ├── train_visual_camera.json
 │   ├── val_thermal_camera.json
-│   └── val_visual_camera.json
-├── coco_yolo_labels.py         # Converts COCO to YOLO format
-├── train_yolo_visual.py        # YOLOv11n training script for visual camera data
-├── train_yolo_thermal.py       # YOLOv11n training script for thermal camera data
-├── val_yolo_visual.py          # Validation script for visual camera model
-├── val_yolo_thermal.py         # Validation script for thermal camera model
-└── yolo_format/                # Generated after running the conversion script
-    ├── visual/
-    └── thermal/
-```
+│   ├── val_visual_camera.json
+│
+├── images/                     # Images used for training/validation
+│   └── Runs_*/                 # Images grouped by run, per camera
+│       ├── Runs_001/
+│       │   ├── VisualCamera1/
+│       │   ├── VisualCamera2/
+│       │   ├── ThermalCamera2/
+│       │   └── ...
+│       ├── Runs_002/
+│       │   └── ...
+│       └── ...
+│
+├── yolo_format/                # Generated YOLO-format data after conversion
+│   ├── visual/
+│   └── thermal/
+│
+├── coco_yolo_labels.py         # Script to convert COCO annotations to YOLO format
+├── train_yolo_visual.py        # Training script for visual data
+├── train_yolo_thermal.py       # Training script for thermal data
+├── val_yolo_visual.py          # Validation script for visual data
+├── val_yolo_thermal.py         # Validation script for thermal data
+├── README.md                   # This file
+├── requirements.txt            # Dependencies
 
 ---
 
